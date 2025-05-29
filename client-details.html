@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- [Head] start -->
+
+<head>
+    <title>Sample Page | Mantis Bootstrap 5 Admin Template</title>
+    <!-- [Meta] -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Mantis is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
+    <meta name="keywords"
+        content="Mantis, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Bootstrap Admin Template">
+    <meta name="author" content="CodedThemes">
+
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/x-icon"> <!-- [Google Font] Family -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"
+        id="main-font-link">
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="./assets/fonts/tabler-icons.min.css">
+    <!-- [Feather Icons] https://feathericons.com -->
+    <link rel="stylesheet" href="./assets/fonts/feather.css">
+    <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome.css">
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="./assets/fonts/material.css">
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="./assets/css/style.css" id="main-style-link">
+    <link rel="stylesheet" href="./assets/css/style-preset.css">
+
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body data-pc-preset="preset-1" data-pc-direction="ltr" data-pc-theme="light">
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+    <!-- [ Sidebar Menu ] start -->
+    <nav class="pc-sidebar pc-trigger pc-sidebar-hide">
+
+        <div class="navbar-wrapper">
+            <div class="m-header">
+                <a href="dashboard.html" class="b-brand text-primary">
+                    <!-- ========   Change your logo from here   ============ -->
+                    <img src="./assets/images/logo-dark.svg" class="img-fluid logo-lg" alt="logo">
+                </a>
+            </div>
+            <div class="navbar-content">
+
+                <ul class="pc-navbar">
+
+                    <li class="pc-item">
+                        <a href="dashboard.html" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-dashboard"></i></span>
+                            <span class="pc-mtext">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="pc-item pc-hasmenu">
+
+                        <a href="#!" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-menu"></i></span>
+                            <span class="pc-mtext">Client</span>
+                            <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
+                        </a>
+
+                        <ul class="pc-submenu">
+                            <li class="pc-item">
+                                <a href="new-client.html" class="pc-link">
+                                    <span class="pc-mtext">Client Registration</span>
+                                </a>
+                            </li>
+                            <li class="pc-item">
+                                <a href="client-details.html" class="pc-link">
+                                    <span class="pc-mtext">Client Details</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="pc-item pc-caption">
+                        <label>UI Components</label>
+                        <i class="ti ti-dashboard"></i>
+                    </li>
+
+                    <li class="pc-item">
+                        <a href="../elements/bc_typography.html" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-typography"></i></span>
+                            <span class="pc-mtext">Typography</span>
+                        </a>
+                    </li>
+
+                    <li class="pc-item pc-hasmenu">
+
+                        <a href="#!" class="pc-link">
+                            <span class="pc-micon"><i class="ti ti-menu"></i></span>
+                            <span class="pc-mtext">Menu levels</span>
+                            <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
+                        </a>
+
+                        <ul class="pc-submenu">
+                            <li class="pc-item"><a class="pc-link" href="#!">Level 2.1</a></li>
+                            <li class="pc-item pc-hasmenu">
+                                <a href="#!" class="pc-link">Level 2.2
+                                    <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
+                                </a>
+                                <ul class="pc-submenu">
+                                    <li class="pc-item"><a class="pc-link" href="#!">Level 3.1</a></li>
+                                    <li class="pc-item"><a class="pc-link" href="#!">Level 3.2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+    <!-- [ Sidebar Menu ] end -->
+    <!-- [ Header Topbar ] start -->
+    <header class="pc-header">
+        <div class="header-wrapper">
+            <!-- [Mobile Media Block] start -->
+            <div class="me-auto pc-mob-drp">
+                <ul class="list-unstyled">
+                    <!-- ======= Menu collapse Icon ===== -->
+                    <li class="pc-h-item pc-sidebar-collapse">
+                        <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="pc-h-item pc-sidebar-popup">
+                        <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown pc-h-item d-inline-flex d-md-none">
+                        <img src="./assets/images/logo-dark.svg" class="img-fluid logo-lg" alt="logo">
+                    </li>
+                    <li class="pc-h-item d-none d-md-inline-flex">
+                        <a href="dashboard.html" class="b-brand text-primary">
+                            <!-- ========   Change your logo from here   ============ -->
+                            <img src="./assets/images/logo-dark.svg" class="img-fluid logo-lg" alt="logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- [Mobile Media Block end] -->
+            <div class="ms-auto">
+                <ul class="list-unstyled">
+                    <li class="dropdown pc-h-item">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="ti ti-mail"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
+                            <div class="dropdown-header d-flex align-items-center justify-content-between">
+                                <h5 class="m-0">Message</h5>
+                                <a href="#!" class="pc-head-link bg-transparent"><i class="ti ti-x text-danger"></i></a>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="dropdown-header px-0 text-wrap header-notification-scroll position-relative"
+                                style="max-height: calc(100vh - 215px)">
+                                <div class="list-group list-group-flush w-100">
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="./assets/images/user/avatar-2.jpg" alt="user-image"
+                                                    class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">3:00 AM</span>
+                                                <p class="text-body mb-1">It's <b>Cristina danny's</b> birthday today.
+                                                </p>
+                                                <span class="text-muted">2 min ago</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="./assets/images/user/avatar-1.jpg" alt="user-image"
+                                                    class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">6:00 PM</span>
+                                                <p class="text-body mb-1"><b>Aida Burg</b> commented your post.</p>
+                                                <span class="text-muted">5 August</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="./assets/images/user/avatar-3.jpg" alt="user-image"
+                                                    class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">2:45 PM</span>
+                                                <p class="text-body mb-1"><b>There was a failure to your setup.</b></p>
+                                                <span class="text-muted">7 hours ago</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item list-group-item-action">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <img src="./assets/images/user/avatar-4.jpg" alt="user-image"
+                                                    class="user-avtar">
+                                            </div>
+                                            <div class="flex-grow-1 ms-1">
+                                                <span class="float-end text-muted">9:10 PM</span>
+                                                <p class="text-body mb-1"><b>Cristina Danny </b> invited to join <b>
+                                                        Meeting.</b></p>
+                                                <span class="text-muted">Daily scrum meeting time</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="text-center py-2">
+                                <a href="#!" class="link-primary">View all</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown pc-h-item header-user-profile">
+                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+                            <img src="./assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+                            <span>Stebin Ben</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+                            <div class="dropdown-header">
+                                <div class="d-flex mb-1">
+                                    <div class="flex-shrink-0">
+                                        <img src="./assets/images/user/avatar-2.jpg" alt="user-image"
+                                            class="user-avtar wid-35">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h6 class="mb-1">Stebin Ben</h6>
+                                        <span>UI/UX Designer</span>
+                                    </div>
+                                    <a href="index.html" class="pc-head-link bg-transparent"><i
+                                            class="ti ti-power text-danger"></i></a>
+                                </div>
+                            </div>
+                            <ul class="nav drp-tabs nav-fill nav-tabs" id="mydrpTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="drp-t1" data-bs-toggle="tab"
+                                        data-bs-target="#drp-tab-1" type="button" role="tab" aria-controls="drp-tab-1"
+                                        aria-selected="true"><i class="ti ti-user"></i>
+                                        Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="drp-t2" data-bs-toggle="tab"
+                                        data-bs-target="#drp-tab-2" type="button" role="tab" aria-controls="drp-tab-2"
+                                        aria-selected="false"><i class="ti ti-settings"></i>
+                                        Setting</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="mysrpTabContent">
+                                <div class="tab-pane fade show active" id="drp-tab-1" role="tabpanel"
+                                    aria-labelledby="drp-t1" tabindex="0">
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-edit-circle"></i>
+                                        <span>Edit Profile</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-user"></i>
+                                        <span>View Profile</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-clipboard-list"></i>
+                                        <span>Social Profile</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-wallet"></i>
+                                        <span>Billing</span>
+                                    </a>
+                                    <a href="index.html" class="dropdown-item">
+                                        <i class="ti ti-power"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="drp-tab-2" role="tabpanel" aria-labelledby="drp-t2"
+                                    tabindex="0">
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-help"></i>
+                                        <span>Support</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-user"></i>
+                                        <span>Account Settings</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-lock"></i>
+                                        <span>Privacy Center</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-messages"></i>
+                                        <span>Feedback</span>
+                                    </a>
+                                    <a href="#!" class="dropdown-item">
+                                        <i class="ti ti-list"></i>
+                                        <span>History</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- [ Header ] end -->
+
+
+
+    <!-- [ Main Content ] start -->
+    <div class="pc-container">
+        <div class="pc-content">
+
+            <!-- [ breadcrumb ] start -->
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb breadcrumb-default-icon">
+                            <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0)">Other</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Sample Page</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- [ breadcrumb ] end -->
+
+            <!-- [ Main Content ] start -->
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div class="card">
+
+                        <div class="card-header p-3 bg-blue-600">
+                            <h3 class="m-0 text-light">Client Details</h3>
+                        </div>
+
+                        <div class="card-body p-3">
+
+                            <table class="table table-hover" id="report-table">
+                                <thead>
+                                    <th>#</th>
+                                    <th>ID</th>
+                                    <th>Legal Name</th>
+                                    <th>Alias Name</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1002</td>
+                                        <td>Peppercorn Pvt. Ltd.</td>
+                                        <td>Empire</td>
+                                        <td>Bengaluru</td>
+                                        <td>Karnataka</td>
+                                        <td>
+                                            <span class="badge bg-light-danger f-14 px-2 py-1">Inactive</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a class="avtar avtar-s btn-link-secondary dropdown-toggle arrow-none"
+                                                    href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="ti ti-dots-vertical f-18"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end" style="">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user-modal">View details</a>
+                                                    <a class="dropdown-item" href="#">Share</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1002</td>
+                                        <td>Peppercorn Pvt. Ltd.</td>
+                                        <td>Empire</td>
+                                        <td>Bengaluru</td>
+                                        <td>Karnataka</td>
+                                        <td>
+                                            <span class="badge bg-light-danger f-14 px-2 py-1">Inactive</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a class="avtar avtar-s btn-link-secondary dropdown-toggle arrow-none"
+                                                    href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="ti ti-dots-vertical f-18"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end" style="">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user-modal">View details</a>
+                                                    <a class="dropdown-item" href="#">Share</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1002</td>
+                                        <td>Peppercorn Pvt. Ltd.</td>
+                                        <td>Empire</td>
+                                        <td>Bengaluru</td>
+                                        <td>Karnataka</td>
+                                        <td>
+                                            <span class="badge bg-light-danger f-14 px-2 py-1">Inactive</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a class="avtar avtar-s btn-link-secondary dropdown-toggle arrow-none"
+                                                    href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="ti ti-dots-vertical f-18"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end" style="">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user-modal">View details</a>
+                                                    <a class="dropdown-item" href="#">Share</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1002</td>
+                                        <td>Peppercorn Pvt. Ltd.</td>
+                                        <td>Empire</td>
+                                        <td>Bengaluru</td>
+                                        <td>Karnataka</td>
+                                        <td>
+                                            <span class="badge bg-light-danger f-14 px-2 py-1">Inactive</span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="dropdown">
+                                                <a class="avtar avtar-s btn-link-secondary dropdown-toggle arrow-none"
+                                                    href="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="ti ti-dots-vertical f-18"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end" style="">
+                                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user-modal">View details</a>
+                                                    <a class="dropdown-item" href="#">Share</a>
+                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+
+
+    <!-- <div class="modal fade show" id="user-modal" data-bs-keyboard="false" tabindex="-1" style="display: block;"
+    aria-modal="true" role="dialog"> -->
+
+    <div class="modal fade" id="user-modal" data-bs-keyboard="false" tabindex="-1" style="display: none;"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
+            <div class="modal-content">
+
+                <div class="modal-header border-0 px-3 py-1">
+                    <h4 class="mb-0">Client Details</h4>
+                    <a href="#" class="avtar avtar-s btn-link-danger" data-bs-dismiss="modal">
+                        <i class="ti ti-x f-20"></i>
+                    </a>
+                </div>
+
+                <hr class="m-0 p-0">
+
+                <div class="modal-body">
+
+                    <div class="row">
+
+                        <div class="col-lg-4">
+
+                            <div class="card">
+                                <div class="card-body position-relative">
+                                    <div class="position-absolute end-0 top-0 p-3">
+                                        <span class="badge bg-light-danger px-2 py-1 f-12">Inactive</span>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <div class="chat-avtar d-inline-flex mx-auto">
+                                            <img class="rounded-circle img-fluid wid-60"
+                                                src="../assets/images/user/user1.png" alt="User image">
+                                        </div>
+                                        <h5 class="mb-2 mt-2">Mohamed Aatif V</h5>
+                                        <p class="mb-0 mt-2 text-muted">Chief Executive Officer</p>
+                                        <hr class="my-3">
+                                        <div
+                                            class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
+                                            <i class="ti ti-mail"></i>
+                                            <a href="mailto:mohamedaatif20@gmail.com?subject=Hello&body=This is a test email"
+                                                class="mb-0">Click to Mail</a>
+
+                                        </div>
+                                        <div
+                                            class="d-inline-flex align-items-center justify-content-between w-100 mb-3">
+                                            <i class="ti ti-phone"></i>
+                                            <a href="tel:+917975394926">+91 79753 94926</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8">
+
+                            <div class="card">
+                                <div class="card-header p-3">
+                                    <h4 class="m-0">Company Information</h4>
+                                </div>
+
+                                <div class="card-body px-3 py-4">
+
+                                    <ul class="list-group list-group-flush">
+
+                                        <li class="list-group-item px-0 pt-0 mt-0">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-1 text-muted">Legal Name</p>
+                                                    <h6 class="mb-0">NKP Empire Ventures Pvt. Ltd.</h6>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-1 text-muted">Alias Name</p>
+                                                    <h6 class="mb-0">Empire</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Organization</p>
+                                                    <h6 class="mb-0">Private</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Industry</p>
+                                                    <h6 class="mb-0">Hospitality & Tourism</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Business Segment</p>
+                                                    <h6 class="mb-0">Restaurants</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">GSTIN</p>
+                                                    <h6 class="mb-0">29AADCN9372N1ZM</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">CIN</p>
+                                                    <h6 class="mb-0">U12345DL2025PTC123456</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">PAN</p>
+                                                    <h6 class="mb-0">ABCDE1234F</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item px-0 pt-0 pb-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">TAN</p>
+                                                    <h6 class="mb-0">DELH12345B</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">LEI</p>
+                                                    <h6 class="mb-0">5493001KJX1KJX1KJX1</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+
+                                <div class="card-header p-3">
+                                    <h4 class="m-0">Headquarter Information</h4>
+                                </div>
+
+                                <div class="card-body">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-1 text-muted">Door No, Floor</p>
+                                                    <h6 class="mb-0">No 14, 4th floor</h6>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-1 text-muted">Street, Location</p>
+                                                    <h6 class="mb-0">Pottery Rd, Richards Town</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Landmark</p>
+                                                    <h6 class="mb-0">Opposite Bangalore East Railway Station</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Area</p>
+                                                    <h6 class="mb-0">Fraser Town</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">City</p>
+                                                    <h6 class="mb-0">Bangalore</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">State</p>
+                                                    <h6 class="mb-0">Karnataka</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Country</p>
+                                                    <h6 class="mb-0">India</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">PIN Code / ZIP Code</p>
+                                                    <h6 class="mb-0">560005</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 pt-1 pb-0 mb-0">
+                                            <p class="mb-1 text-muted">Location Link</p>
+                                            <h6 class="mb-0"><a href="https://maps.app.goo.gl/qHV4f7uMA5fTD1GDA"
+                                                    target="_blank">Click here to redirect to
+                                                    map</a></h6>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+
+                                <div class="card-header p-3">
+                                    <h4 class="m-0">Bank Information</h4>
+                                </div>
+
+                                <div class="card-body">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-1 text-muted">Beneficiary Name</p>
+                                                    <h6 class="mb-0">Mohammed Aatif V.</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Bank Name</p>
+                                                    <h6 class="mb-0">State Bank of India</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Account Number</p>
+                                                    <h6 class="mb-0">9876543210741852</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">IFSC Code</p>
+                                                    <h6 class="mb-0">SBIN0007988</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="row">
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Branch Name</p>
+                                                    <h6 class="mb-0">KACHARAKANAHALLI</h6>
+                                                </div>
+                                                <div class="col-md-6 pt-1">
+                                                    <p class="mb-1 text-muted">Branch Address</p>
+                                                    <h6 class="mb-0">KAMMANAHALI MAIN ST THOMAS TOWN BANGALORE PIN
+                                                        560084</h6>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item px-0 pt-0">
+                                            <div class="col-md-12 pt-1">
+                                                <p class="mb-1 text-muted">Branch Address</p>
+                                                <h6 class="mb-0">KAMMANAHALI MAIN ST THOMAS TOWN BANGALORE PIN
+                                                    560084</h6>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Required Js -->
+    <script src="./assets/js/plugins/popper.min.js"></script>
+    <script src="./assets/js/plugins/simplebar.min.js"></script>
+    <script src="./assets/js/plugins/bootstrap.min.js"></script>
+    <script src="./assets/js/fonts/custom-font.js"></script>
+    <script src="./assets/js/pcoded.js"></script>
+    <script src="./assets/js/plugins/feather.min.js"></script>
+
+</body>
+<!-- [Body] end -->
+
+</html>

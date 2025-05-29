@@ -75,7 +75,12 @@
             <ul class="pc-submenu">
               <li class="pc-item">
                 <a href="new-client.html" class="pc-link">
-                  <span class="pc-mtext">Client</span>
+                  <span class="pc-mtext">Client Registration</span>
+                </a>
+              </li>
+              <li class="pc-item">
+                <a href="client-details.html" class="pc-link">
+                  <span class="pc-mtext">Client Details</span>
                 </a>
               </li>
             </ul>
@@ -342,352 +347,250 @@
           <div class="card">
 
             <div class="card-header p-3">
-              <h3 class="m-0">New Client</h3>
+              <h3 class="m-0">Client Registration Form</h3>
             </div>
 
             <div class="card-body">
 
               <form action="" method="post">
 
-                <div class="card mb-4 p-3">
-                  <h4 class="mb-3">Company Information</h4>
-                  <div class="row">
-                    <div class="col-md-12">
-
-                      <div class="row g-4">
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
-                            <label for="floatingInput">Legal Name <span class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
-                            <label for="floatingInput">Alias Name <span class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <select id="industryType1" class="form-control">
-                              <option value="">Select Organization</option>
-                              <option value="">Government</option>
-                              <option value="">Non-Profit</option>
-                              <option value="">Private</option>
-                              <option value="">Public</option>
-                              <option value="">Multinational Corporation</option>
-                              <option value="">SME</option>
-                              <option value="">Conglomerate</option>
-                            </select>
-                            <label for="floatingInput">Organization</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <select id="industryType" class="form-control" onchange="updateBusinessTypes()">
-                              <option value="">Select Industry</option>
-                            </select>
-                            <label for="floatingInput">Industry</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <select id="businessType" class="form-control">
-                              <option value="">Select Business Segment</option>
-                            </select>
-                            <label for="floatingInput">Business Segment</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="validationCustom02" value="07ABCDE1234F1Z5"
-                              autocomplete="off" required autofocus>
-                            <label for="floatingInput">GSTIN</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="validationCustom02"
-                              value="U12345DL2025PTC123456" autocomplete="off" required autofocus>
-                            <label for="floatingInput">CIN</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="validationCustom02" value="ABCDE1234F"
-                              autocomplete="off" required autofocus>
-                            <label for="floatingInput">PAN</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="validationCustom02" value="DELH12345B"
-                              autocomplete="off" required autofocus>
-                            <label for="floatingInput">TAN</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="validationCustom02" value="5493001KJX1KJX1KJX1"
-                              autocomplete="off" required autofocus>
-                            <label for="floatingInput">LEI</label>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-4 p-3">
-                  <h4 class="mb-3">Headquarter Address & Location</h4>
-                  <div class="row">
-                    <div class="col-md-12">
-
-                      <div class="row g-4">
-
-                        <div class="col-md-3">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="floatingInput" value="No 14, 4th floor"
-                              placeholder="">
-                            <label for="floatingInput">Door No, Floor <span class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-5">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInput" value="Pottery Rd, Richards Town"
-                              placeholder="">
-                            <label for="floatingInput">Street, Location <span class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInput"
-                              value="opposite Bangalore East Railway Station" placeholder="">
-                            <label for="floatingInput">Landmark <span class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-3">
-                          <div class="form-floating">
-                            <input type="text" id="areaInput" class="form-control" placeholder="" readonly>
-                            <label class="form-label" for="areaInput">Area <span class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="form-floating">
-                            <input id="cityInput" class="form-control" placeholder="" readonly>
-                            <label class="form-label" for="cityDropdown">City <span class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="form-floating">
-                            <input id="stateInput" class="form-control" placeholder="" readonly>
-                            <label class="form-label" for="stateDropdown">State <span
-                                class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="form-floating">
-                            <input type="text" id="countryInput" class="form-control" placeholder="" readonly>
-                            <label class="form-label" for="countryDropdown">Country <span
-                                class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-3">
-                          <div class="form-floating">
-                            <input type="text" min="100001" class="form-control" name="pincode" id="pincode"
-                              onkeyup="getLocationData()" placeholder="">
-                            <label class="form-label" for="pincode">PIN Code / ZIP Code <span
-                                class="text-danger">*</span></label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-floating">
-                            <input type="text" min="100001" class="form-control" name="pincode" id="pincode"
-                              onkeyup="getLocationData()" placeholder="">
-                            <label class="form-label" for="pincode">Location Link</label>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-4 p-3">
-                  <h4 class="mb-3">Bank Information</h4>
-                  <div class="row">
-                    <div class="col-md-12">
-
-                      <div class="row g-4">
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="floatingInput" value="Mohamed Aatif V"
-                              placeholder="">
-                            <label for="floatingInput">Beneficiary Name</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <input type="number" class="form-control" id="floatingInput" placeholder="">
-                            <label for="floatingInput">Account Number</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="ifsc" name="ifsc" required
-                              oninput="fetchBankDetails()" placeholder="" value="SBIN0007988">
-                            <label for="floatingInput">IFSC Code</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="bankname" name="bankname" placeholder=""
-                              readonly>
-                            <label for="floatingInput">Bank Name</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="branch" placeholder="" readonly>
-                            <label for="branch">Branch Name</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="bankaddress" placeholder="" readonly>
-                            <label for="bankaddress">Branch Address</label>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card my-4 p-3">
-                  <h4 class="mb-3">Contact & Communication</h4>
-                  <div class="row">
-                    <div class="col-md-12">
-
-                      <div class="row g-4">
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="floatingInput" value="Mohamed Aatif V"
-                              placeholder="Mohamed Aatif V">
-                            <label for="floatingInput">Primary Contact Name</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="floatingInput" value="Chief Executive Officer"
-                              placeholder="Chief Executive Officer">
-                            <label for="floatingInput">Designation</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <input type="email" class="form-control" id="floatingInput" value="mohamedaatifv@empire.in"
-                              placeholder="mohamedaatifv@empire.in">
-                            <label for="floatingInput">Email Address</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-floating mb-0">
-                            <input type="text" class="form-control" id="floatingInput" value="9876543210"
-                              placeholder="9876543210">
-                            <label for="floatingInput">Phone Number</label>
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <h5 class="mt-3">Software Usage Information</h5>
-                <hr>
-
+                <h4 class="mb-3">Company Information</h4>
                 <div class="row">
-                  <div class="col-md-12">
 
-                    <div class="row">
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" for="validationCustom01">Subscription Plan</label>
-                        <input type="text" class="form-control" id="validationCustom01" autocomplete="off" required>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" for="validationCustom02">Active Modules / Features Used</label>
-                        <input type="text" class="form-control" id="validationCustom02" autocomplete="off" required>
-                      </div>
-                    </div>
-
-                    <div class="row">
-
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" for="industry">Technical Preferences</label>
-                        <select id="industry" class="form-control" onchange="updateBusinessTypes()">
-                          <option value="">Select Industry</option>
-                        </select>
-                      </div>
-
-                    </div>
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="legal-Name">Legal Name<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="legalName" name="legalName" autocomplete="off" required
+                      autofocus>
                   </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="aliasName">Alias Name</label>
+                    <input type="text" class="form-control" id="aliasName" name="aliasName" autocomplete="off" required>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label for="organization" class="form-label">Organization</label>
+                    <select id="organization" name="organization" class="form-control">
+                      <option value="">Select Organization</option>
+                      <option value="Government">Government</option>
+                      <option value="Non-Profit">Non-Profit</option>
+                      <option value="Private">Private</option>
+                      <option value="Public">Public</option>
+                      <option value="MNC">Multinational Corporation</option>
+                      <option value="SME">SME</option>
+                      <option value="Conglomerate">Conglomerate</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label for="industryType" class="form-label">Industry</label>
+                    <select id="industryType" name="industryType" class="form-control" onchange="updateBusinessTypes()">
+                      <option value="">Select Industry</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label for="businessSegment" class="form-label">Business Segment</label>
+                    <select id="businessSegment" name="businessSegment" class="form-control">
+                      <option value="">Select Business Type</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label for="gstin" class="form-label">GSTIN</label>
+                    <input type="text" class="form-control" id="gstin" name="gstin" value="29AADCN9372N1ZM"
+                      autocomplete="off" required>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label for="cin" class="form-label">CIN</label>
+                    <input type="text" class="form-control" id="cin" name="cin" value="U12345DL2025PTC123456"
+                      autocomplete="off" required>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label for="pan" class="form-label">PAN</label>
+                    <input type="text" class="form-control" id="pan" name="pan" value="ABCDE1234F" autocomplete="off"
+                      required>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="tan" class="form-label">TAN</label>
+                    <input type="text" class="form-control" id="tan" name="tan" value="DELH12345B" autocomplete="off"
+                      required>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="lei" class="form-label">LEI</label>
+                    <input type="text" class="form-control" id="lei" name="lei" value="5493001KJX1KJX1KJX1"
+                      autocomplete="off" required>
+                  </div>
+
+                </div>
+
+                <h4 class="my-3">Headquarter Information</h4>
+                <div class="row">
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="doorFloor">Door No, Floor<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="doorFloor" name="doorFloor" value="No 14, 4th floor">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="streetLocation">Street, Location<span
+                        class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="streetLocation" name="streetLocation"
+                      value="Pottery Rd, Richards Town">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="landmark">Landmark<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="landmark" name="landmark"
+                      value="Opposite Bangalore East Railway Station">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="areaInput">Area<span class="text-danger">*</span></label>
+                    <input type="text" id="areaInput" name="areaInput" class="form-control" readonly>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="cityInput">City<span class="text-danger">*</span></label>
+                    <input type="text" id="cityInput" name="cityInput" class="form-control" readonly>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="stateInput">State<span class="text-danger">*</span></label>
+                    <input type="text" id="stateInput" name="stateInput" class="form-control" readonly>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="countryInput">Country<span class="text-danger">*</span></label>
+                    <input type="text" id="countryInput" name="countryInput" class="form-control" readonly>
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="pincode">PIN Code / ZIP Code<span
+                        class="text-danger">*</span></label>
+                    <input type="text" min="100001" class="form-control" id="pincode" name="pincode"
+                      onkeyup="getLocationData()">
+                  </div>
+
+                  <div class="form-group col-md-12">
+                    <label class="form-label" for="locationLink">Location Link</label>
+                    <input type="text" class="form-control" id="locationLink" name="locationLink">
+                  </div>
+
+                </div>
+
+                <h4 class="my-3">Bank Information</h4>
+                <div class="row">
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="beneficiaryName">Beneficiary Name</label>
+                    <input type="text" class="form-control" id="beneficiaryName" name="beneficiaryName"
+                      value="Mohamed Aatif V" placeholder="">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="accountNumber">Account Number</label>
+                    <input type="number" class="form-control" id="accountNumber" name="accountNumber" placeholder="">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="ifsc">IFSC Code</label>
+                    <input type="text" class="form-control" id="ifsc" name="ifsc" required oninput="fetchBankDetails()"
+                      placeholder="" value="SBIN0007988">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-3">
+                    <label class="form-label" for="bankName">Bank Name</label>
+                    <input type="text" class="form-control" id="bankName" name="bankName" placeholder="" readonly>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="branchName">Branch Name</label>
+                    <input type="text" class="form-control" id="branchName" name="branchName" placeholder="" readonly>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="branchAddress">Branch Address</label>
+                    <input type="text" class="form-control" id="branchAddress" name="branchAddress" placeholder=""
+                      readonly>
+                  </div>
+
+                </div>
+
+                <h4 class="my-3">Contact Details</h4>
+                <div class="row">
+
+                  <div class="form-group col-md-3 mb-4">
+                    <label class="form-label" for="contactName">Primary Contact Name</label>
+                    <input type="text" class="form-control" id="contactName" name="contactName" value="Mohamed Aatif V"
+                      placeholder="Mohamed Aatif V">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-4">
+                    <label class="form-label" for="designation">Designation</label>
+                    <input type="text" class="form-control" id="designation" name="designation"
+                      value="Chief Executive Officer" placeholder="Chief Executive Officer">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-4">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" value="mohamedaatifv@empire.in"
+                      placeholder="mohamedaatifv@empire.in">
+                  </div>
+
+                  <div class="form-group col-md-3 mb-4">
+                    <label class="form-label" for="phoneNumber">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" value="9876543210"
+                      placeholder="9876543210">
+                  </div>
+
                 </div>
 
                 <div class="row align-items-center">
                   <div class="col-sm-12 text-sm-end mt-3 mt-sm-0">
-                    <button type="reset" class="btn btn-success me-2">Submit</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop" onclick="openPreview()">
+                      Preview & Submit
+                    </button>
                     <button type="reset" class="btn btn-light-danger">Cancel</button>
                   </div>
                 </div>
 
+                <!-- Modal to show preview start -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header py-3 px-4">
+                        <h1 class="modal-title fs-4 m-0 p-0" id="staticBackdropLabel">Preview Submission</h1>
+                      </div>
+                      <div class="modal-body" id="previewContent">
+                        <!-- Preview Data Will Appear Here -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                        <button type="submit" class="btn btn-success">Confirm Submission</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal to show preview end -->
+
               </form>
 
             </div>
-
           </div>
-
         </div>
-
       </div>
 
+
     </div>
-
-    <!-- [ Main Content ] end -->
-
   </div>
-  </div>
-
   <!-- [ Main Content ] end -->
 
   <!-- Required Js -->
@@ -731,7 +634,7 @@
 
     function updateBusinessTypes() {
       const industrySelect = document.getElementById("industryType");
-      const businessSelect = document.getElementById("businessType");
+      const businessSelect = document.getElementById("businessSegment");
       const selectedIndustry = industrySelect.value;
 
       // Clear previous options
@@ -750,8 +653,6 @@
 
     // Initialize dropdown on page load
     window.onload = populateIndustries;
-
-
 
     // This function is used to fetch and display in dropdown of country,state, city from internet
     async function getLocationData() {
@@ -782,16 +683,12 @@
       document.getElementById('areaInput').value = ""; // Added reset for area name
     }
 
-
-
-
     // This function is used to fetch and display bank name and branch name of bank from internet
-
     function fetchBankDetails() {
       let ifscCode = document.getElementById("ifsc").value;
-      let branchField = document.getElementById("branch");
-      let bankField = document.getElementById("bankname");
-      let addressField = document.getElementById("bankaddress");
+      let branchField = document.getElementById("branchName");
+      let bankField = document.getElementById("bankName");
+      let addressField = document.getElementById("branchAddress");
 
       if (ifscCode.length === 11) {
         fetch(`https://ifsc.razorpay.com/${ifscCode}`)
@@ -800,7 +697,10 @@
             if (data && data.BANK && data.BRANCH && data.ADDRESS) {
               bankField.value = data.BANK;
               branchField.value = data.BRANCH;
-              addressField.value = data.ADDRESS;
+
+              // Clean the address by removing special characters
+              let cleanedAddress = data.ADDRESS.replace(/[,.]/g, ' ');
+              addressField.value = cleanedAddress;
             } else {
               bankField.value = "";
               branchField.value = "";
@@ -820,6 +720,38 @@
         addressField.value = "";
       }
     }
+
+
+    // This Function is used to preview form data in modal before submit 
+    function openPreview() {
+      const form = document.querySelector('form');
+      const inputs = form.querySelectorAll('input, select, textarea');
+      let html = '<table class="table table-bordered">';
+
+      inputs.forEach(input => {
+        const label = input.closest('.form-group')?.querySelector('label')?.textContent || input.name;
+        const value = input.value || '-';
+        html += `
+        <tr>
+          <td>${label}</td>
+          <td>${value}</td>
+        </tr>
+      `;
+      });
+
+      html += '</table>';
+      document.getElementById('previewContent').innerHTML = html;
+      document.getElementById('previewModal').style.display = 'flex';
+    }
+
+    function closePreview() {
+      document.getElementById('previewModal').style.display = 'none';
+    }
+
+    function submitForm() {
+      document.querySelector('form').submit();
+    }
+
   </script>
 </body>
 <!-- [Body] end -->
